@@ -1,4 +1,4 @@
-<a href="detail-restaurant.html">
+<a [routerLink]="['/restaurants', restaurant.id]">
   <div class="place-info-box">
     <span class="place-info-box-icon"><img [src]="restaurant.imagePath" /></span>
 
@@ -9,5 +9,5 @@
       <span class="place-info-box-detail">{{restaurant.deliveryEstimate}}</span>
     </div>
     <!-- /.info-box-content -->
-  </div> 
+  </div>
 </a>
